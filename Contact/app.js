@@ -38,13 +38,13 @@ function check_fname(){
     var pattern= /^[a-zA-Z ]+/;
     var fname= $("#floatingName").val();
     if(pattern.test(fname)){
-      $("error_fname").hide();
+      $("#error_fname").hide();
       $("#floatingName").css("border-bottom","2px solid #34F458");
 
     }
     else{
       $("#error_fname").html('should contain only characters')
-      $("error_fname").show();
+      $("#error_fname").show();
       $("#floatingName").css("border-bottom","2px solid red");
       error_fname=true;
 
@@ -56,13 +56,13 @@ function check_Cname(){
     var pattern= /^[a-zA-Z ]+/;
     var Cname= $("#floatingCname").val();
     if(pattern.test(Cname)){
-      $("error_Cname").hide();
+      $("#error_Cname").hide();
       $("#floatingCname").css("border-bottom","2px solid #34F458");
 
     }
     else{
       $("#error_Cname").html('should contain only characters')
-      $("error_Cname").show();
+      $("#error_Cname").show();
       $("#floatingCname").css("border-bottom","2px solid red");
       error_Cname=true;
 
@@ -76,13 +76,13 @@ function check_Email(){
 
     var Email= $("#floatingInput").val();
     if(pattern.test(Email) && Email!==''){
-      $("error_Email").hide();
+      $("#error_Email").hide();
       $("#floatingInput").css("border-bottom","2px solid #34F458");
 
     }
     else{
-      $("#error_Email").html('should contain only characters')
-      $("error_Email").show();
+      $("#error_Email").html('Invalid Email')
+      $("#error_Email").show();
       $("#floatingInput").css("border-bottom","2px solid red");
       error_Email=true;
 
@@ -95,14 +95,14 @@ function check_Mobile(){
     var pattern=/^(()|0)[]?[0-9][]?[0-9][]?[0-9]/;
     var mob=$("#floatingMob").val();
     if(pattern.test(mob) && mob.length==10){
-        $("error_Mobile").hide();
+        $("#error_Mobile").hide();
       $("#floatingMob").css("border-bottom","2px solid #34F458");
 
 
     }
     else{
-        $("#error_Mobile").html('should contain only characters')
-      $("error_Mobile").show();
+        $("#error_Mobile").html('Invalid number')
+      $("#error_Mobile").show();
       $("#floatingMob").css("border-bottom","2px solid red");
       error_Mobile=true;
 
@@ -114,13 +114,13 @@ function check_Comments(){
     var pattern= /^[a-zA-Z ]+/;
     var Comments= $("#floatingTextarea").val();
     if(pattern.test(Comments)&& Comments !==''){
-      $("error_Comments").hide();
+      $("#error_Comments").hide();
       $("#floatingTextarea").css("border-bottom","2px solid #34F458");
 
     }
     else{
-      $("#error_Comments").html('should contain only characters')
-      $("error_Comments").show();
+      $("#error_Comments").html('messsage cannot be empty!')
+      $("#error_Comments").show();
       $("#floatingTextarea").css("border-bottom","2px solid red");
       error_Comments=true;
 
@@ -162,3 +162,10 @@ $("#submit").click(function(){
 
 
 })
+
+
+
+
+
+
+
